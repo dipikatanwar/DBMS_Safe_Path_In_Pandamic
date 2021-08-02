@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{url_for('static', filename='js_lib/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" >
+    <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='icon/logo.png') }}"/>
+    <link rel="shortcut icon" href="#">
+    <title>Safe Route In Pendamic</title>
+  </head>
+  <body>
+    {% include 'header.html' %}
+    <marquee direction = "left" id="news" ></marquee>
+    <div id="content">
+      <div id="sidebar">
+        {% block sidebar %}
+        {% endblock %}
+      </div>
+      <div id="main">
+      {% block main%}
+      {% endblock %}
+      </div>
+      <div id="sidebar_right">
+        {% block sidebar_right %}
+        {% endblock %}
+      </div>
+    </div>
+  {% include 'footer.html' %}
+  <script src="{{url_for('static', filename='js_lib/jquery.min.js') }}"></script>
+  <script src="{{url_for('static', filename='js_lib/bootstrap.bundle.min.js') }}"></script>
+  {% block footer%}
+  {% endblock %}
+</body>
+</html>

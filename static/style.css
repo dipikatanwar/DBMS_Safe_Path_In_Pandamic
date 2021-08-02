@@ -1,0 +1,152 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+    background-color:#6fd4d4;
+
+}
+
+#header{
+ height: 70px;
+ text-align: center;
+ background-color: teal;   
+ color: white;
+}
+
+#footer{
+    height: 70px;
+    text-align: center;
+    background-color: teal;   
+    color: white;
+    margin-bottom: 0;
+   }
+
+ul li{
+    padding: 10px;
+    text-decoration: none;
+    font-size: small;
+}
+
+ul{
+    cursor: pointer;
+}
+
+li:hover {
+    font-weight: 500;
+    font-size: medium;
+}
+
+#content
+{
+    display: table;
+	width: 100%;
+	height: 85%;
+}
+
+#sidebar{
+    display: table-cell;
+	width: 15%;
+	vertical-align: top;
+    margin-left: 10px;
+    padding: .5cm;
+}
+
+#main{
+    display: table-cell;
+	width: 70%;
+	vertical-align: top;
+    padding: auto;
+    /* text-align: center; */
+}
+
+#mainTable{
+    /* justify-content: center; */
+    margin: auto;
+}
+#sidebar_right{
+    display: table-cell;
+	width: 15%;
+	vertical-align: top;
+    margin-right: 10px;
+}
+
+marquee{
+    color: chocolate;
+    text-decoration: wavy;
+    text-shadow: beige;
+    font-weight: 500;
+    font-size: large;
+}
+
+
+.nav-link:hover{
+    font-weight: bold;
+}
+#mapArea
+{
+    margin-top: 5px;
+    padding: auto;
+    margin: auto;
+    /* border-style: double; */
+    text-align: center;
+    vertical-align: middle;
+}
+
+#form1{
+    /* justify-content: center; */
+    margin-top: 0px;
+    padding: .5cm;
+}
+
+.list-group-item {
+    background-color: transparent;
+    border-radius: 0;
+    color:white;
+    font-weight: bold;
+    border: none;
+    }
+
+img{
+    color: white;
+    width: 18px;
+    margin: auto;
+    vertical-align: auto;
+}
+
+.activecase{
+    color: red;
+    font-size: x-small;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    z-index: 100;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    vertical-align: middle;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  #foundPath
+  {
+    text-align: center;
+    font-size: medium;
+    color: green;
+    vertical-align: top;   
+  }
